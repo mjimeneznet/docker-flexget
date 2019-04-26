@@ -7,8 +7,14 @@ Create your config.yml and download directory in a local folder in your computer
 ```
 docker build -t flexget .
 ```
-## Run
+## Create a local folder
+` mkdir -p ~/flexget/`
+## Run your build
 ```
-docker run -it --rm --name=flexget -v /home/user/flexget/:/root/.flexget/ flexget"
+docker run -it --rm --name=flexget -v ~/flexget/:/root/.flexget/ flexget"
+```
+## Run from dockerhub
+```
+docker run -it --rm --name=flexget -v ~/flexget:/root/.flexget/ mjimeneznet/docker-flexget:latest"
 ```
 

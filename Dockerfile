@@ -1,4 +1,5 @@
 FROM python:2.7
+MAINTAINER Manuel Jimenez mjimenez@mjimenez.net
 
 RUN pip install -I flexget transmissionrpc ftputil
 
